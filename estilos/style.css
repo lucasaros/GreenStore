@@ -20,7 +20,7 @@ body {
 .cabecalho {
     padding: 20px 0px 50px 0px;
     background-color: var(--cor001);
-    height: 30%;
+    height: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,7 +30,7 @@ body {
 
 .cabecalho_titulo {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.5em;
+    font-size: 90px;
     text-align: center;
     padding-bottom: 40px;
     padding-top: 50px;
@@ -60,6 +60,9 @@ body {
     font-size: 19px;
     color: white;
     transition: 0.2s;
+    background-color: #60996627;
+    padding: 8px;
+    border-radius: 6px;
 }
 
 .apresentacao_conteudo {
@@ -99,6 +102,11 @@ body {
     width: 90%;
 }
 
+.apresentacao_conteudo_colunas_itens_imagens:hover {
+    width: 94%;
+    transition: 0.3s;
+}
+
 .rodape {
     background-color: var(--cor001);
     padding: 30px;
@@ -108,4 +116,36 @@ body {
     text-align: center;
     color: white;
     font-weight: 400;
+}
+
+@media (max-width: 534px) {
+
+    .cabecalho_titulo {
+        font-size: 70px;
+    }
+
+
+    .apresentacao_conteudo_colunas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+     }
+
+     .apresentacao_conteudo_colunas_itens {
+
+        background-color: white;
+        width: 50%;
+        border: none;
+    }
+
+    .apresentacao_conteudo_colunas_itens_titulo {
+        font-size: 45px;
+    }
+
+    .apresentacao_conteudo_colunas_itens_preco {
+        font-size: 35px;
+    }
+
+
 }
