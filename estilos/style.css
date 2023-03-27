@@ -118,7 +118,7 @@ body {
     font-weight: 400;
 }
 
-@media (max-width: 534px) {
+@media (max-width: 561px) {
 
     .cabecalho_titulo {
         font-size: 70px;
@@ -149,3 +149,11 @@ body {
 
 
 }
+
+@media (max-width: 422px) {
+
+    .cabecalho_titulo {
+        font-size: 50px;
+    }
+}
+
