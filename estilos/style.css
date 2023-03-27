@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+:root {
+    --cor001: #609966;
+    --cor002: #EDF1D6;
+}
+
+body {
+    height: 97vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cabecalho {
+    padding: 20px 0px 50px 0px;
+    background-color: var(--cor001);
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.cabecalho_titulo {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 50px;
+    color: #EDF1D6;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.528);
+}
+
+.cabecalho_titulo:hover {
+    color: white;
+    transition: 0.2s;
+}
+
+
+.cabecalho_navegacao_links {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor002);
+    width: 100%;
+    margin: 0px 20px 0px 0px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.cabecalho_navegacao_links:hover {
+    font-size: 19px;
+    color: white;
+    transition: 0.2s;
+}
+
+.apresentacao_conteudo {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.apresentacao_conteudo_colunas {
+   display: flex;
+   justify-content: space-around;
+   margin-top: 30px;
+   margin-bottom: 50px;
+}
+
+.apresentacao_conteudo_colunas_itens {
+    border-right: 2px solid var(--cor001);
+    padding-right: 10px;
+    background-color: white;
+    width: 20%;
+}
+
+.apresentacao_conteudo_colunas_itens_titulo {
+    text-align: center;
+    font-weight: 500;
+    color: var(--cor001);
+    font-size: 20px;
+}
+
+.apresentacao_conteudo_colunas_itens_preco {
+    text-align: center;
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--cor001);
+    border-bottom: 2px solid var(--cor001);
+}
+.apresentacao_conteudo_colunas_itens_imagens {
+    width: 90%;
+}
+
+.rodape {
+    background-color: var(--cor001);
+    padding: 30px;
+}
+
+.rodape_texto {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+}
