@@ -15,7 +15,7 @@
 }
 
 body {
-    height: 97vh;
+    height: 100vh;
     font-family: var(--fontePrincipal);
 }
 
@@ -152,8 +152,6 @@ body {
     .apresentacao_conteudo_colunas_itens_preco {
         font-size: 25px;
     }
-
-
 }
 
 @media (max-width: 422px) {

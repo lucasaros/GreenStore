@@ -9,7 +9,7 @@
 }
 
 body {
-    height: 97vh;
+    height: 100vh;
     color: var(--cor001);
 
     background-image: url(../imagens/background.jpg);
