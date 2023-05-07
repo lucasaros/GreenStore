@@ -16,8 +16,12 @@
 
 body {
     height: 100vh;
+    width: 100vw;
     font-family: var(--fontePrincipal);
 }
+
+
+/* CABEÇALHO */
 
 .cabecalho {
     background-color: var(--cor001);
@@ -29,85 +33,89 @@ body {
     gap: 15px;
 }
 
-.cabecalho_titulo {
+.cabecalho__titulo {
     color: #EDF1D6;
     font: normal bold 90px var(--fontePrincipal);
     text-decoration: none;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.528);
 }
 
-.cabecalho_titulo:hover {
+.cabecalho__titulo:hover {
     color: white;
     transition: 0.3s;
 }
 
-.cabecalho_navegacao {
-    padding-bottom: 10px;
+.lista-menu {
+    display: flex;
+    list-style-type: none;
 }
 
-.cabecalho_navegacao_links {
+.lista-menu__links {
     text-decoration: none;
     color: var(--cor002);
     font: normal bold 22px var(--fontePrincipal) ;
     padding: 0px 20px 0px 0px;
 }
 
-.cabecalho_navegacao_links:hover {
+.lista-menu__links__links:hover {
     color: white;
     font-size: 23px;
     transition: 0.17s;
 }
 
-.apresentacao_conteudo {
-    max-width: 1000px;
-    padding: 60px 10px 60px 10px;
-    margin: auto;
+/* CATÁLOGO */
+
+.catalogo__container {
+    max-width: 1200px;
+    padding: 60px 60px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    gap: 60px;
+    gap: 10px;
+    flex-wrap: wrap; 
+
+    justify-content: space-between;
+    background-color: rgb(228, 224, 224);
 }
 
-.apresentacao_conteudo_colunas {
-   display: flex;
-   justify-content: space-around;
-   gap: 15px;
-}
-
-.apresentacao_conteudo_colunas_itens {
+.catalogo__item {
     border-right: 2px solid var(--cor001);
     padding-right: 10px;
-    background-color: white;
-    width: 20%;
+    background-color: transparent;
+    width: 250px;
 }
 
-.apresentacao_conteudo_colunas_itens_titulo {
+.catalogo__titulo {
     text-align: center;
     font-weight: 500;
     color: var(--cor001);
     font-size: 20px;
 }
 
-.apresentacao_conteudo_colunas_itens_titulo:hover {
+.catalogo__titulo:hover {
     font-size: 21px;
     transition: 0.3s;
 }
 
-.apresentacao_conteudo_colunas_itens_preco {
+.catalogo__preco {
     text-align: center;
     font-weight: 500;
     font-size: 20px;
     color: var(--cor001);
 }
-.apresentacao_conteudo_colunas_itens_imagens {
+.catalogo__imagem {
     display: block;
     margin: auto;
     width: 90%;
 }
 
-.apresentacao_conteudo_colunas_itens_imagens:hover {
+.catalogo__imagem:hover {
     width: 94%;
     transition: 0.3s;
 }
+
+
+
+/* RODAPÉ */
 
 .rodape {
     background-color: var(--cor001);
