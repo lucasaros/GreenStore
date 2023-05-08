@@ -1,0 +1,74 @@
+@charset "UTF-8"; 
+
+@import url("catalogo.css");
+
+
+body {
+    height: 100vh;
+    color: var(--cor001);
+
+    background-image: url(../imagens/background.jpg);
+    background-size: cover;
+    background-position: left center;
+    background-attachment: fixed;
+}
+
+.cabecalho {
+    background-color: var(--verdeTransparente);
+}
+
+.opcoes__container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    position: relative;
+    top: 350px;
+}
+
+.opcoes__titulo {
+    font-size: 60px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.528);
+    color: white;
+}
+
+.opcoes-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.opcoes-lista__item {
+    list-style-type: none;
+    border: 1px solid white;
+    border-radius: 40px;
+    width: 35vw;
+    background-color: var(--verdeTransparente);
+    text-align: center;
+}
+
+.opcoes-lista__link {
+    font: normal 500 35px var(--fontePrincipal);
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 20px;
+}
+
+.opcoes-lista__item:hover {
+    color: white;
+    background-color: #6099666b;
+}
+
+
+@media (max-width: 349px) {
+    .cabecalho__navegacao__links {
+        font-size: 15px;
+    }
+
+    .apresentacao__opcoes__titulo {
+        font-size: 38px;
+    }
+}

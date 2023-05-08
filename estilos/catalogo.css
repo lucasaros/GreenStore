@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* #609966 */
+    /* #EDF1D6 */
+
+    --verdeEscuro: #3C6255; 
+    --verdeClaro:  #82CD47;
+    --verdeFundo:  #BBD6B8;
+    --verdeTransparente: #60996658;
+
+    --fontePrincipal: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: var(--fontePrincipal);
+}
+
+
+/* CABEÇALHO */
+
+.cabecalho {
+    background-color: var(--verdeFundo);
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    white-space: nowrap;
+    
+}
+
+.cabecalho__titulo {
+    color: var(--verdeEscuro);
+    font: normal bold 150px var(--fontePrincipal);
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.528);
+}
+
+.cabecalho__titulo:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+.lista-menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.lista-menu__links {
+    text-decoration: none;
+    text-align: center;
+    color: var(--verdeEscuro);
+    font: normal bold 35px var(--fontePrincipal) ;
+}
+
+.lista-menu__links__links:hover {
+    color: white;
+    font-size: 23px;
+    transition: 0.17s;
+}
+
+/* CATÁLOGO */
+
+.catalogo__container {
+    max-width: 1200px;
+    padding: 60px 60px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    padding: 350px 50px 50px 50px;
+}
+
+.catalogo__item {
+    border-right: 2px solid var(--verdeClaro);
+    padding-right: 10px;
+    background-color: transparent;
+    width: 250px;
+    margin: 50px 0 50px 0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--verdeClaro);
+}
+
+.catalogo__titulo {
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.catalogo__titulo:hover {
+    font-size: 21px;
+    transition: 0.3s;
+}
+
+.catalogo__preco {
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.catalogo__imagem {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+.catalogo__imagem:hover {
+    width: 94%;
+    transition: 0.3s;
+}
+
+
+/* RODAPÉ */
+
+.rodape {
+    color: var(--verdeEscuro);
+    background-color: var(--verdeFundo);
+    padding: 50px;
+}
+
+.rodape_texto {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+@media (max-width: 561px) {}
