@@ -18,14 +18,13 @@ body {
 }
 
 .opcoes__container {
-
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
-
     position: relative;
-    top: 350px;
+    top: 200px;
+    padding-bottom: 5em;
 }
 
 .opcoes__titulo {
@@ -37,7 +36,7 @@ body {
 .opcoes-lista {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 80px;
 }
 
 .opcoes-lista__item {
@@ -63,12 +62,24 @@ body {
 }
 
 
-@media (max-width: 349px) {
-    .cabecalho__navegacao__links {
-        font-size: 15px;
+@media (max-width: 515px) {
+    .opcoes__titulo {
+        font-size: 50px;
+    }
+}
+
+
+@media (max-width: 414px) {
+
+    .opcoes-lista {
+        gap: 40px;
     }
 
-    .apresentacao__opcoes__titulo {
-        font-size: 38px;
+    .opcoes-lista__link {
+        font-size: 20px;
+    }
+
+    .opcoes__titulo {
+        font-size: 40px;
     }
 }

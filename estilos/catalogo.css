@@ -8,8 +8,6 @@
 }
 
 :root {
-    /* #609966 */
-    /* #EDF1D6 */
 
     --verdeEscuro: #3C6255; 
     --verdeClaro:  #82CD47;
@@ -55,7 +53,7 @@ body {
     display: flex;
     align-items: center;
     gap: 30px;
-
+    padding: .5em;
 }
 
 .lista-menu__links {
@@ -71,21 +69,17 @@ body {
     transition: 0.17s;
 }
 
+
 /* CATÁLOGO */
 
 .catalogo__container {
     max-width: 1200px;
-    padding: 60px 60px;
     margin: 0 auto;
     display: flex;
     gap: 20px;
     flex-wrap: wrap; 
     justify-content: space-between;
-    padding: 250px 50px 50px 50px;
-}
-
-.catalogo__container:hover {
-    
+    padding: 250px 30px 50px 30px;
 }
 
 .catalogo__item {
@@ -124,6 +118,7 @@ body {
     width: 90%;
 }
 
+
 /* RODAPÉ */
 
 .rodape {
@@ -142,9 +137,7 @@ body {
 }
 
 
-
-@media screen and (max-width: 1080px) {
-
+@media screen and (max-width: 1100px) {
 
     .cabecalho__titulo {
         font-size: 60px;
@@ -152,16 +145,16 @@ body {
     }
 
     .lista-menu__links {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .catalogo__container {
         padding: 180px 1em 0em 1em;
         margin: 0 auto;
     }
+}
 
-
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 990px) {
     
     .cabecalho {
         flex-direction: column;
@@ -206,7 +199,6 @@ body {
 
     .cabecalho__titulo {
         font-size: 40px;
-        padding: 0px;
     }
 
     .lista-menu__links {
@@ -228,6 +220,5 @@ body {
     .rodape__texto {
         padding: .5em;
         font-size: 18px;
-        color: aliceblue;
     }
 }
