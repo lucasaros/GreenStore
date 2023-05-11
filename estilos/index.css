@@ -22,13 +22,14 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    position: relative;
-    top: 200px;
+    position: fixed;
+    width: 100vw;
+    top: 150px;
     padding-bottom: 5em;
 }
 
 .opcoes__titulo {
-    font-size: 60px;
+    font-size: 45px;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.528);
     color: white;
 }
@@ -36,7 +37,7 @@ body {
 .opcoes-lista {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 60px;
 }
 
 .opcoes-lista__item {
@@ -49,11 +50,11 @@ body {
 }
 
 .opcoes-lista__link {
-    font: normal 500 35px var(--fontePrincipal);
+    font: normal 500 25px var(--fontePrincipal);
     text-decoration: none;
     color: white;
     display: block;
-    padding: 20px;
+    padding: 15px;
 }
 
 .opcoes-lista__item:hover {
